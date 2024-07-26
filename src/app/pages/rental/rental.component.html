@@ -8,45 +8,45 @@
       <label class="form-label" for="typeNumber" placeholder="000"
         >Rental ID</label
       >
-      <input type="number" id="rentalId" class="form-control" />
+      <input type="number" id="rentalId" class="form-control" [(ngModel)]="rentalObj.rentalId" required/>
     </div>
 
     <div class="form-group mt-4">
       <label for="exampleFormControlInput1">Rental Date</label>
-      <input type="email" class="form-control" id="rentalDate" />
+      <input type="email" class="form-control" id="rentalDate" [(ngModel)]="rentalObj.rentalDate" required/>
     </div>
 
     <div class="form-group mt-4">
         <label for="exampleFormControlInput1">Return Date</label>
-        <input type="email" class="form-control" id="returnDate" />
+        <input type="email" class="form-control" id="returnDate" [(ngModel)]="rentalObj.returnDate" required/>
     </div>
 
     <div class="form-group mt-4">
         <label for="exampleFormControlInput1">Due Date</label>
-        <input type="email" class="form-control" id="dueDate" />
+        <input type="email" class="form-control" id="dueDate" [(ngModel)]="rentalObj.dueDate" required/>
     </div>
 
     <div data-mdb-input-init class="form-outline">
         <label class="form-label" for="typeNumber" placeholder="000"
           >Total Cost</label
         >
-        <input type="number" id="totalCost" class="form-control" />
+        <input type="number" id="totalCost" class="form-control" [(ngModel)]="rentalObj.totalCost" required/>
     </div>
     
   </div>
 
   <div class="row mt-4">
     <div class="col-3">
-        <button class="btn btn-info">Add</button>
+        <button class="btn btn-info" (click)="addRental()">Add</button>
     </div>
     <div class="col-3 btn-">
-        <button class="btn btn-success">Update</button>
+        <button class="btn btn-success" (click)="updateRental()">Update</button>
     </div>
     <div class="col-3">
-        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-danger" (click)="deleteRental()">Delete</button>
     </div>
     <div class="col-3">
-        <button class="btn btn-secondary">Search</button>
+        <button class="btn btn-secondary" (click)="searchRental()">Search</button>
     </div>
   </div>
 </div>

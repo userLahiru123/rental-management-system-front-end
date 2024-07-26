@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { NavComponent } from '../../component/nav/nav.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import Swal from 'sweetalert2';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-item',
   standalone: true,
-  imports: [NavComponent,FormsModule],
+  imports: [NavComponent,FormsModule,HttpClientModule],
   templateUrl: './item.component.html',
   styleUrl: './item.component.css'
 })
@@ -43,6 +43,8 @@ export class ItemComponent {
         this.clearFields();
       }
     )
+
+    // console.log(this.itemObj);
   }
 
   deleteItem(){
