@@ -1,1 +1,52 @@
-<p>rental works!</p>
+<app-nav></app-nav>
+<div class="container">
+  <div class="row text-center mt-lg-5">
+    <h1>Rental</h1>
+  </div>
+  <div class="row">
+    <div data-mdb-input-init class="form-outline">
+      <label class="form-label" for="typeNumber" placeholder="000"
+        >Rental ID</label
+      >
+      <input type="number" id="rentalId" class="form-control" />
+    </div>
+
+    <div class="form-group mt-4">
+      <label for="exampleFormControlInput1">Rental Date</label>
+      <input type="email" class="form-control" id="rentalDate" />
+    </div>
+
+    <div class="form-group mt-4">
+        <label for="exampleFormControlInput1">Return Date</label>
+        <input type="email" class="form-control" id="returnDate" />
+    </div>
+
+    <div class="form-group mt-4">
+        <label for="exampleFormControlInput1">Due Date</label>
+        <input type="email" class="form-control" id="dueDate" />
+    </div>
+
+    <div data-mdb-input-init class="form-outline">
+        <label class="form-label" for="typeNumber" placeholder="000"
+          >Total Cost</label
+        >
+        <input type="number" id="totalCost" class="form-control" />
+    </div>
+    
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-3">
+        <button class="btn btn-info">Add</button>
+    </div>
+    <div class="col-3 btn-">
+        <button class="btn btn-success">Update</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-danger">Delete</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-secondary">Search</button>
+    </div>
+  </div>
+</div>
