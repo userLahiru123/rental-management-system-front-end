@@ -1,9 +1,48 @@
 <app-nav></app-nav>
 <div class="container">
-    <div class="row text-center mt-lg-5">
-        <h1>Item Page</h1>
+  <div class="row text-center mt-lg-5">
+    <h1>Item Page</h1>
+  </div>
+  <div class="row">
+    <div data-mdb-input-init class="form-outline">
+      <label class="form-label" for="typeNumber" placeholder="000"
+        >Item ID</label
+      >
+      <input type="number" id="typeNumber" class="form-control" />
     </div>
-    <div class="row">
-        
+
+    <div class="form-group mt-4">
+      <label for="exampleFormControlInput1">Item Name</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" />
     </div>
+
+    <div data-mdb-input-init class="form-outline mt-4">
+      <label class="form-label" for="typeNumber" placeholder="000"
+        >Rental Per Day</label
+      >
+      <input type="number" id="typeNumber" class="form-control" />
+    </div>
+
+    <div data-mdb-input-init class="form-outline mt-4">
+      <label class="form-label" for="typeNumber" placeholder="000"
+        >Fine Per Day</label
+      >
+      <input type="number" id="typeNumber" class="form-control" />
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-3">
+        <button class="btn btn-info">Add</button>
+    </div>
+    <div class="col-3 btn-">
+        <button class="btn btn-success">Update</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-danger">Delete</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-secondary">Search</button>
+    </div>
+  </div>
 </div>
