@@ -5,40 +5,40 @@
   </div>
   <div class="row">
     <div data-mdb-input-init class="form-outline">
-      <label class="form-label" for="typeNumber" placeholder="000"
+      <label class="form-label" for="typeNumber"
         >Customer ID</label
       >
-      <input type="number" id="typeNumber" class="form-control" />
+      <input type="number" id="typeNumber" class="form-control"  [(ngModel)]="customerObj.customerId" required placeholder="000"/>
     </div>
 
     <div class="form-group mt-4">
       <label for="exampleFormControlInput1">Name</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" />
+      <input type="email" class="form-control" id="exampleFormControlInput1"  [(ngModel)]="customerObj.name" required/>
     </div>
 
     <div class="form-group mt-4">
         <label for="exampleFormControlInput1">City</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" />
+        <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="customerObj.city" required/>
       </div>
 
       <div class="form-group mt-4">
         <label for="exampleFormControlInput1">Contact</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" />
+        <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="customerObj.contactNumber" required/>
       </div>
   </div>
 
   <div class="row mt-4">
     <div class="col-3">
-        <button class="btn btn-info">Add</button>
+        <button class="btn btn-info" (click)="addCustomer()">Add</button>
     </div>
     <div class="col-3 btn-">
-        <button class="btn btn-success">Update</button>
+        <button class="btn btn-success" (click)="updateCustomer()">Update</button>
     </div>
     <div class="col-3">
-        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-danger" (click)="deleteCustomer()">Delete</button>
     </div>
     <div class="col-3">
-        <button class="btn btn-secondary">Search</button>
+        <button class="btn btn-secondary" (click)="searchCustomer()">Search</button>
     </div>
   </div>
 </div>
