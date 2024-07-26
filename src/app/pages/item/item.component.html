@@ -8,41 +8,50 @@
       <label class="form-label" for="typeNumber" placeholder="000"
         >Item ID</label
       >
-      <input type="number" id="typeNumber" class="form-control" />
+      <input type="number" id="typeNumber" class="form-control" [(ngModel)]="itemObj.itemId" required/>
     </div>
 
     <div class="form-group mt-4">
       <label for="exampleFormControlInput1">Item Name</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" />
+      <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="itemObj.name" required/>
     </div>
 
     <div data-mdb-input-init class="form-outline mt-4">
       <label class="form-label" for="typeNumber" placeholder="000"
         >Rental Per Day</label
       >
-      <input type="number" id="typeNumber" class="form-control" />
+      <input type="number" id="typeNumber" class="form-control" [(ngModel)]="itemObj.rentalPerDate" required/>
     </div>
 
     <div data-mdb-input-init class="form-outline mt-4">
       <label class="form-label" for="typeNumber" placeholder="000"
         >Fine Per Day</label
       >
-      <input type="number" id="typeNumber" class="form-control" />
+      <input type="number" id="typeNumber" class="form-control" [(ngModel)]="itemObj.rentalPerDate" required/>
+    </div>
+
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Availability</label>
+      <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="itemObj.availability" required>
+        <option selected>select</option>
+        <option>availabel</option>
+        <option>not available</option>
+      </select>
     </div>
   </div>
 
   <div class="row mt-4">
     <div class="col-3">
-        <button class="btn btn-info">Add</button>
+        <button class="btn btn-info" (click)="addItem()">Add</button>
     </div>
     <div class="col-3 btn-">
-        <button class="btn btn-success">Update</button>
+        <button class="btn btn-success" (click)="updateItem()">Update</button>
     </div>
     <div class="col-3">
-        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-danger" (click)="deleteItem()">Delete</button>
     </div>
     <div class="col-3">
-        <button class="btn btn-secondary">Search</button>
+        <button class="btn btn-secondary" (click)="searchItem()">Search</button>
     </div>
   </div>
 </div>

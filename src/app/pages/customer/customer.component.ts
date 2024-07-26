@@ -3,7 +3,6 @@ import { NavComponent } from '../../component/nav/nav.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import Swal from 'sweetalert2';
 import { FormsModule, NgModel } from '@angular/forms';
-import { compileNgModule } from '@angular/compiler';
 
 @Component({
   selector: 'app-customer',
